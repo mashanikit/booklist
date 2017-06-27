@@ -9,7 +9,7 @@ class BooksController < ApplicationController
 
       format.csv do
         render plain: @books.generate_csv(@books)
-
+      end 
 
       format.json do
         render json: @books.map { |book|
@@ -20,7 +20,7 @@ class BooksController < ApplicationController
             already_read: book.already_read
           }
         }
-      end
+
       end
     end
   end

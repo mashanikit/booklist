@@ -1,7 +1,7 @@
 <% @books.each do |book| %>
-<%= book.title %>
-<%= book.author %>
-<%= book.already_read %>
-<%= book.id %> 
+Title: <%= book.title %>
+Author: <%= book.author %>
+Read it? <%= book.already_read %>
+Book ID: <%= book.id %> 
 
 <% end %>
